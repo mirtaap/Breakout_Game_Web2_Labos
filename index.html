@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breakout</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- naslov igre na vrhu stranice -->
+  <h1 id="gameTitle">Breakout 2D</h1>  
+  <div id="config">
+    <!-- sekcija za postavke igre, gdje korisnik može unijeti svoje vrijednosti -->
+    <h2>Postavke igre</h2>
+    <div class="settings-container">
+      <!-- postavka za broj redova cigli -->
+      <div class="setting">
+        <label>Broj redova cigli:</label>
+        <input id="brickRows" type="number" value="5">
+      </div>
+      <!-- postavka za broj stupaca cigli -->
+      <div class="setting">
+        <label>Broj stupaca cigli:</label>
+        <input id="brickColumns" type="number" value="8">
+      </div>
+      <!-- postavka za brzinu loptice -->
+      <div class="setting">
+        <label>Brzina loptice:</label>
+        <input id="ballSpeed" type="number" value="12">
+      </div>
+    </div>
+    <!-- gumb za pokretanje igre nakon što su postavke unesene -->
+    <button onclick="startGame()">Pokreni igru</button>
+  </div>
+  <!-- prostor gdje se prikazuje igra -->
+  <canvas id="gameCanvas"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>

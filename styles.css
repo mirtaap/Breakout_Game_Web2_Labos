@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1b263b;
+    color: #f8f9fa;
+    font-family: "Courier New", Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  #gameTitle {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #f39c12;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 0 #2e4053;
+    margin: 0;
+    padding: 10px;
+    border: 3px solid #f39c12;
+    border-radius: 8px;
+    background-color: #2e4053;
+  }
+  
+  #config {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #34495e;
+    border: 5px solid #f39c12;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    color: #ecf0f1;
+    width: 400px;
+  }
+  
+  #config h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  
+  .settings-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .setting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .setting label {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .setting input[type="number"] {
+    background-color: #444;
+    color: #f0e68c;
+    border: 1px solid #f39c12;
+    padding: 5px;
+    width: 60px;
+    font-family: inherit;
+    text-align: center;
+  }
+  
+  button {
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: #e67e22;
+  }
+  
+  canvas {
+    border: 10px solid #f39c12;
+    box-shadow: 0 0 20px rgba(243, 156, 18, 0.6);
+  }
+  
